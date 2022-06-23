@@ -3,11 +3,11 @@ import db from '.';
 import Match from './match';
 
 class Team extends Model {
-  teamName: string
+  teamName: string;
 }
 
 Team.init({
-  teamName: STRING
+  teamName: STRING,
 }, {
   underscored: true,
   sequelize: db,

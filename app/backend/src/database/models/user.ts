@@ -3,6 +3,7 @@ import db from '.';
 // import OtherModel from './OtherModel';
 
 class User extends Model {
+  id?: number;
   username: string;
   role: string;
   email: string;
@@ -13,7 +14,7 @@ User.init({
   username: STRING,
   role: STRING,
   email: STRING,
-  password: STRING
+  password: STRING,
 }, {
   underscored: true,
   sequelize: db,
