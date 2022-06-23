@@ -1,4 +1,4 @@
-import { sign, SignOptions } from 'jsonwebtoken';
+import { sign, SignOptions, verify } from 'jsonwebtoken';
 import { readFileSync } from 'fs';
 
 const jwtConfig: SignOptions = {
@@ -8,4 +8,11 @@ const jwtConfig: SignOptions = {
 
 const key = readFileSync('./jwt.evaluation.key', 'utf-8');
 
-export default (payload = {}) => sign(payload, key, jwtConfig);
+const signJwt = (payload = {}) => sign(payload, key, jwtConfig);
+
+const verifyJwt = (payload: string) => verify(payload, key);
+
+export default {
+  signJwt,
+  verifyJwt,
+};

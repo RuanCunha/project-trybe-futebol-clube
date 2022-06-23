@@ -1,0 +1,13 @@
+interface TokenPayload {
+  user: {
+    id: number,
+    username: string,
+    role: string,
+    email: string,
+    password: string,
+  },
+  iat: number,
+  exp: number
+}
+
+export default TokenPayload;

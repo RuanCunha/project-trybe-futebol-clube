@@ -5,7 +5,8 @@ import loginCheck from '../middlewares/loginCheck.middleware';
 
 const Routes = (app: App) => {
   app.post('/login', loginCheck.checkLogInfo, loginController.login);
-  // app.get('/login/validate');
+  app.get('/login/validate', loginController.authLogin);
+  // app.get('/teams');
 
   app.use(errorMiddleware);
 };
