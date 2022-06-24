@@ -1,5 +1,3 @@
-// import { readFileSync } from 'fs';
-// import { sign } from 'jsonwebtoken';
 import { compareSync } from 'bcryptjs';
 import UserModel from '../database/models/user';
 import jwt from '../middlewares/jwt';

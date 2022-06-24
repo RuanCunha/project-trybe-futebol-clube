@@ -6,13 +6,13 @@ import 'express-async-errors';
 
 const login = async (req: Request, res: Response) => {
   const { email, password } = req.body;
-  const result = await loginService.login(email, password);
+  const user = await loginService.login(email, password);
 
-  if (result.message) {
-    return res.status(401).json({ message: result.message });
+  if (user.message) {
+    return res.status(401).json({ message: user.message });
   }
 
-  return res.status(200).json(result);
+  return res.status(200).json(user);
 };
 
 const authLogin = async (req:Request, res: Response) => {
