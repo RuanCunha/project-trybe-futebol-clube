@@ -49,9 +49,17 @@ const finishMatch = async (id: number) => {
   await MatchModel.update({ inProgress: false }, { where: { id } });
 };
 
+const editMatch = async (match: Match, id: number) => {
+  const { homeTeamGoals, awayTeamGoals } = match;
+  const updatedMatch = await MatchModel.update({ homeTeamGoals, awayTeamGoals }, { where: { id } });
+
+  return updatedMatch;
+};
+
 export default {
   getMatches,
   getMatchesByProgress,
   insertMatch,
   finishMatch,
+  editMatch,
 };
