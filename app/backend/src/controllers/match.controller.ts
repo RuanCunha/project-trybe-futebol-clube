@@ -18,7 +18,15 @@ const insertMatch = async (req: Request, res: Response) => {
   return res.status(201).json(match);
 };
 
+const finishMatch = async (req: Request, res: Response) => {
+  const { id } = req.params;
+  await MatchModel.finishMatch(parseInt(id, 10));
+
+  return res.status(200).json({ message: 'Finished' });
+};
+
 export default {
   getMatches,
   insertMatch,
+  finishMatch,
 };

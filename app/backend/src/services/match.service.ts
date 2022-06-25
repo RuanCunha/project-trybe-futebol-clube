@@ -40,8 +40,13 @@ const insertMatch = async (match: Match) => {
   return createdMatch;
 };
 
+const finishMatch = async (id: number) => {
+  await MatchModel.update({ inProgress: false }, { where: { id } });
+};
+
 export default {
   getMatches,
   getMatchesByProgress,
   insertMatch,
+  finishMatch,
 };

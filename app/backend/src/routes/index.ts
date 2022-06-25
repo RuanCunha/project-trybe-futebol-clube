@@ -13,6 +13,7 @@ const Routes = (app: App) => {
 
   app.get('/matches', matchController.getMatches);
   app.post('/matches', matchController.insertMatch);
+  app.patch('/matches/:id/finish', matchController.finishMatch);
 
   app.use(errorMiddleware);
 };
