@@ -35,6 +35,11 @@ const getMatchesByProgress = async (inProgress: string) => {
 };
 
 const insertMatch = async (match: Match) => {
+  const checkHome = await Team.findByPk(match.homeTeam);
+  const checkAway = await Team.findByPk(match.awayTeam);
+
+  if (!checkHome || !checkAway) return 'notFound';
+
   const createdMatch = await MatchModel.create({ ...match, inProgress: true });
 
   return createdMatch;

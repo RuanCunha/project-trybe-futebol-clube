@@ -14,7 +14,16 @@ const getMatches = async (req: Request, res: Response) => {
 
 const insertMatch = async (req: Request, res: Response) => {
   const { homeTeam, awayTeam, homeTeamGoals, awayTeamGoals } = req.body;
+
+  if (homeTeam === awayTeam) {
+    return res.status(401)
+      .json({ message: 'It is not possible to create a match with two equal teams' });
+  }
   const match = await MatchModel.insertMatch({ homeTeam, awayTeam, homeTeamGoals, awayTeamGoals });
+  if (typeof match === 'string') {
+    return res.status(404).json({ message: 'There is no team with such id!' });
+  }
+
   return res.status(201).json(match);
 };
 
