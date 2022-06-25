@@ -10,7 +10,9 @@ const Routes = (app: App) => {
   app.get('/login/validate', loginController.authLogin);
   app.get('/teams', teamsController.getTeams);
   app.get('/teams/:id', teamsController.getTeamById);
+
   app.get('/matches', matchController.getMatches);
+  app.post('/matches', matchController.insertMatch);
 
   app.use(errorMiddleware);
 };

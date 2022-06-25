@@ -1,3 +1,4 @@
+import Match from '../interfaces/match.interface';
 import MatchModel from '../database/models/match';
 import Team from '../database/models/team';
 
@@ -33,7 +34,14 @@ const getMatchesByProgress = async (inProgress: string) => {
   return matches;
 };
 
+const insertMatch = async (match: Match) => {
+  const createdMatch = await MatchModel.create({ ...match, inProgress: true });
+
+  return createdMatch;
+};
+
 export default {
   getMatches,
   getMatchesByProgress,
+  insertMatch,
 };

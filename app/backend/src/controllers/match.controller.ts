@@ -12,6 +12,13 @@ const getMatches = async (req: Request, res: Response) => {
   return res.status(200).json(matches);
 };
 
+const insertMatch = async (req: Request, res: Response) => {
+  const { homeTeam, awayTeam, homeTeamGoals, awayTeamGoals } = req.body;
+  const match = await MatchModel.insertMatch({ homeTeam, awayTeam, homeTeamGoals, awayTeamGoals });
+  return res.status(201).json(match);
+};
+
 export default {
   getMatches,
+  insertMatch,
 };
