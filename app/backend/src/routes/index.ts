@@ -3,6 +3,7 @@ import errorMiddleware from '../middlewares/error.middleware';
 import loginController from '../controllers/login.controller';
 import teamsController from '../controllers/teams.controller';
 import matchController from '../controllers/match.controller';
+import leaderboardController from '../controllers/leaderboard.controller';
 import loginCheck from '../middlewares/loginCheck.middleware';
 
 const Routes = (app: App) => {
@@ -15,6 +16,8 @@ const Routes = (app: App) => {
   app.post('/matches', matchController.insertMatch);
   app.patch('/matches/:id/finish', matchController.finishMatch);
   app.patch('/matches/:id', matchController.editMatch);
+
+  app.get('/leaderboard/home', leaderboardController.leaderboardHome);
 
   app.use(errorMiddleware);
 };
