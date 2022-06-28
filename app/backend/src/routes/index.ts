@@ -18,6 +18,7 @@ const Routes = (app: App) => {
   app.patch('/matches/:id', matchController.editMatch);
 
   app.get('/leaderboard/home', leaderboardController.leaderboardHome);
+  app.get('/leaderboard/away', leaderboardController.leaderboardAway);
 
   app.use(errorMiddleware);
 };
