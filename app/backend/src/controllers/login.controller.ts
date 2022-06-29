@@ -17,12 +17,10 @@ const login = async (req: Request, res: Response) => {
 
 const authLogin = async (req:Request, res: Response) => {
   const { authorization } = req.headers;
-  if (typeof authorization === 'string') {
-    const decoded = jwt.verifyJwt(authorization) as TokenPayload;
-    const { role } = decoded.user;
-    return res.status(200).json(role);
-  }
-  return res.status(404).json({ message: 'Deu ruim' });
+  if (!authorization) return res.status(404).json({ message: 'Token not found' });
+  const decoded = jwt.verifyJwt(authorization) as TokenPayload;
+  const { role } = decoded.user;
+  return res.status(200).json(role);
 };
 
 export default {
