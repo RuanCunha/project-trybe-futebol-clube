@@ -768,6 +768,36 @@ export const matches = [
   }
 ]
 
+export const leaderboardHome = [
+  {
+      "name": "Santos",
+      "totalGames": 3,
+      "totalVictories": "3",
+      "totalLosses": "0",
+      "totalDraws": "0",
+      "goalsFavor": "9",
+      "goalsOwn": "3",
+      "goalsBalance": "6",
+      "totalPoints": "9",
+      "efficiency": 100
+  }
+]
+
+export const leaderboardAway = [
+  {
+      "name": "Palmeiras",
+      "totalGames": 2,
+      "totalVictories": "2",
+      "totalLosses": "0",
+      "totalDraws": "0",
+      "goalsFavor": "7",
+      "goalsOwn": "0",
+      "goalsBalance": "7",
+      "totalPoints": "6",
+      "efficiency": 100
+  }
+]
+
 module.exports = {
   teamsArray,
   teamSingular,
@@ -777,4 +807,6 @@ module.exports = {
   loginSemEmail,
   loginSenhaIncorreta,
   loginEmailIncorreto,
+  leaderboardHome,
+  leaderboardAway
 }
