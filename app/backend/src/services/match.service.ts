@@ -46,7 +46,8 @@ const insertMatch = async (match: Match) => {
 };
 
 const finishMatch = async (id: number) => {
-  await MatchModel.update({ inProgress: false }, { where: { id } });
+  const test = await MatchModel.update({ inProgress: false }, { where: { id } });
+  console.log(test);
 };
 
 const editMatch = async (match: Match, id: number) => {

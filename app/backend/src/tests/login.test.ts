@@ -6,35 +6,20 @@ import chaiHttp = require('chai-http');
 
 import { app } from '../app';
 import User from '../database/models/user';
+const {
+  loginCorreto,
+  loginSemSenha,
+  loginSemEmail,
+  loginSenhaIncorreta,
+  loginEmailIncorreto } = require('./utils')
+
+
 
 import { Response } from 'superagent';
 
 chai.use(chaiHttp);
 
 const { expect } = chai;
-
-const loginCorreto = {
-  email: 'admin@admin.com',
-  password: 'secret_admin'
-}
-
-const loginSemSenha = {
-  email: 'admin@admin.com'
-}
-
-const loginSemEmail = {
-  password: 'secret_admin',
-}
-
-const loginSenhaIncorreta = {
-  email: 'admin@admin.com',
-  password: 'senha_incorreta',
-}
-
-const loginEmailIncorreto = {
-  email: 'admin@admin.',
-  password: 'secret_admin',
-}
 
 const fakeAuth = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6IkFkbWluIiwicm9sZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJwYXNzd29yZCI6IiQyYSQwOCR4aS5IeGsxY3pBTzBuWlIuLkIzOTN1MTBhRUQwUlExTjNQQUVYUTdIeHRMaktQRVpCdS5QVyJ9LCJpYXQiOjE2NTY9MzM4MzUsImV4cCI6MTY1NjU2OTgzNX5.Zqxj9jgzlt5FeNOnDffT4TY1eQHaA-I_Drymshj6bsq"
 
