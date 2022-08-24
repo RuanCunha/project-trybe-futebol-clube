@@ -19,7 +19,7 @@ Execute os testes do back-end utilizando o comando:
 
 * `npm test`
 
-<!-- # Como rodar
+# Como rodar
 
 > Na sua máquina você deve ter:
 >
@@ -28,10 +28,11 @@ Execute os testes do back-end utilizando o comando:
 > - Docker
 > - Docker-compose versão 1.29.2
 
-1. Clone o repositório com o comando e entre na pasta:
+1. Clone o repositório e entre na pasta com o comando:
 * `git clone git@github.com:RuanCunha/project-trybe-futebol-clube.git && cd project-trybe-futebol-clube`
-2. Instale as dependências `npm install`
--->
+2. Instale as dependências:
+* `npm install`
+3. 
 
 ## Próximos passos (Roadmap)
 
