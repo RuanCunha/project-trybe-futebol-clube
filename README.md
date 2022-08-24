@@ -7,17 +7,11 @@ TFC é um site informativo sobre partidas e classificações de futebol. O front
 
 ## Tecnologias utilizadas
 
-- Noje.Js
+- Node.Js
 - Express
 - Sequelize
 - REST
 - Docker
-
-## Executando os testes
-
-Execute os testes do back-end utilizando o comando:
-
-* `npm test`
 
 # Como rodar
 
@@ -39,9 +33,15 @@ Execute os testes do back-end utilizando o comando:
 5. Acesse pelo navegador o endereço local:
 * `http://localhost:3000/`
 
+## Executando os testes
+
+Execute os testes do back-end utilizando o comando:
+
+* `npm test`
+
 ## Próximos passos (Roadmap)
 
-- [ ]  Adicionar instruções de instalação e execução local
+- [X]  Adicionar instruções de instalação e execução local
 - [ ]  Hospedar e disponibilizar online
 - [ ]  Criar frontend original para substituir o da Trybe
 
