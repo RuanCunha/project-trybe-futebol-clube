@@ -19,7 +19,7 @@ Execute os testes do back-end utilizando o comando:
 
 * `npm test`
 
-<!-- # Como rodar
+# Como rodar
 
 > Na sua máquina você deve ter:
 >
@@ -28,15 +28,22 @@ Execute os testes do back-end utilizando o comando:
 > - Docker
 > - Docker-compose versão 1.29.2
 
-1. Clone o repositório com o comando e entre na pasta:
+1. Clone o repositório e entre na pasta com o comando:
 * `git clone git@github.com:RuanCunha/project-trybe-futebol-clube.git && cd project-trybe-futebol-clube`
-2. Instale as dependências `npm install`
--->
+2. Instale as dependências:
+* `npm install`
+3. Crie as imagens e suba as aplicações para o compose usando o comando:
+* `npm run compose:up`
+4. Acesse a pasta do back-end e monte a aplicação com o comando:
+* `cd app/backend && npm run build`
+5. Acesse pelo navegador o endereço local:
+* `http://localhost:3000/`
 
 ## Próximos passos (Roadmap)
 
 - [ ]  Adicionar instruções de instalação e execução local
 - [ ]  Hospedar e disponibilizar online
+- [ ]  Criar frontend original para substituir o da Trybe
 
 <!--
 ⚠️ IMPORTANTE: você precisa deixar nítido:
