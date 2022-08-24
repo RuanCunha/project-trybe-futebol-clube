@@ -5,6 +5,10 @@
 Projeto criado durante o módulo de back-end do curso da [Trybe](https://www.betrybe.com/).
 TFC é um site informativo sobre partidas e classificações de futebol. O front-end foi desenvolvido e fornecido pela Trybe, cabendo aos alunos (individualmente) construírem o back-end.
 
+| ![Exemplo do front-end](/assets/front-example.png) |
+|:--:|
+| *O front-end foi fornecido pela [TRYBE](https://www.betrybe.com/) para o desenvolvimento do projeto. O back-end foi desenvolvido por [Ruan Cunha](https://github.com/RuanCunha).* |
+
 ## Tecnologias utilizadas
 
 - Node.Js
@@ -44,11 +48,3 @@ Execute os testes do back-end utilizando o comando:
 - [X]  Adicionar instruções de instalação e execução local
 - [ ]  Hospedar e disponibilizar online
 - [ ]  Criar frontend original para substituir o da Trybe
-
-<!--
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
-
--->
