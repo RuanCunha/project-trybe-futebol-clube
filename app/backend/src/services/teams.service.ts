@@ -9,10 +9,6 @@ const getTeams = async () => {
 const getTeamById = async (id: number) => {
   const team = await TeamModel.findByPk(id);
 
-  // if (!team) {
-  //   return { message: 'No team found' };
-  // }
-
   return team;
 };
 

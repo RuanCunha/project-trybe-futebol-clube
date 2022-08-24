@@ -81,9 +81,4 @@ describe('Testes de Login', () => {
     chaiHttpResponse = await chai.request(app).get('/login/validate').set('authorization', fakeAuth)
     expect(chaiHttpResponse.status).to.be.equal(500);
   });
-
-  // it('Se não tiver authorization, retorna o erro', async () => {
-  //   chaiHttpResponse = await chai.request(app).get('/login/validate').set('authorization', undefined)
-  //   expect(chaiHttpResponse.status).to.be.equal(500);
-  // });
 });
