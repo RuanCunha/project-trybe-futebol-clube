@@ -1,13 +1,43 @@
-# 🚧 README em construção 🚧
+# Projeto Trybe Futebol Clube
 
-<!-- Olá, Tryber!
+## Contexto
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+Projeto criado durante o módulo de back-end do curso da [Trybe](https://www.betrybe.com/).
+TFC é um site informativo sobre partidas e classificações de futebol. O front-end foi desenvolvido e fornecido pela Trybe, cabendo aos alunos (individualmente) construírem o back-end.
 
-É essencial que você preencha esse documento por conta própria, ok?
+## Tecnologias utilizadas
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
+- Noje.Js
+- Express
+- Sequelize
+- REST
+- Docker
 
+## Executando os testes
+
+Execute os testes do back-end utilizando o comando:
+
+* `npm test`
+
+<!-- # Como rodar
+
+> Na sua máquina você deve ter:
+>
+> - Sistema Operacional Distribuição Unix (Ubuntu, Debian, Pop_OS...)
+> - Node versão 16
+> - Docker
+> - Docker-compose versão 1.29.2
+
+1. Clone o repositório com o comando e entre na pasta:
+* `git clone git@github.com:RuanCunha/project-trybe-futebol-clube.git && cd project-trybe-futebol-clube`
+2. Instale as dependências `npm install`
+-->
+
+## Próximos passos (Roadmap)
+
+[x] - Adicionar instruções d einstala
+
+<!--
 ⚠️ IMPORTANTE: você precisa deixar nítido:
 - quais arquivos/pastas foram desenvolvidos por você; 
 - quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
