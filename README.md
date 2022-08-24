@@ -35,7 +35,8 @@ Execute os testes do back-end utilizando o comando:
 
 ## Próximos passos (Roadmap)
 
-[x] - Adicionar instruções d einstala
+- [ ]  Adicionar instruções de instalação e execução local
+- [ ]  Hospedar e disponibilizar online
 
 <!--
 ⚠️ IMPORTANTE: você precisa deixar nítido:
